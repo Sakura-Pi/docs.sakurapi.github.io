@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: 编译armbian
 sidebar_label: 编译armbian
 ---

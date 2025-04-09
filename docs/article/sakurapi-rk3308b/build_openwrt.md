@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: 编译openwrt
 sidebar_label: 编译openwrt
 ---
