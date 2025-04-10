@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "🌸 Sakura Pi",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Sakura Pi Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Get Started": {
+    "message": "Get Started",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.Download": {
+    "message": "Download",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}

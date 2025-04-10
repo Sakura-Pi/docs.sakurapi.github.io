@@ -1,0 +1,8 @@
+{
+  "label": "Sakura Pi RK3308B",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Sakura Pi RK3308B is our first officially released SBC."
+  }
+}

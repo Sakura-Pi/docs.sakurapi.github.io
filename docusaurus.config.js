@@ -33,23 +33,21 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-CN',
-    locales: ['en', 'zh-CN'],
-    path: 'i18n',
+    locales: ['zh-CN', 'en'],
     localeConfigs: {
+      'zh-CN': {
+        label: '简体中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN',
+        calendar: 'gregory',
+      },
       en: {
         label: 'English',
         direction: 'ltr',
         htmlLang: 'en-US',
         calendar: 'gregory',
-        path: 'en',
+        path: '/en/',
       },
-      zh: {
-        label: '简体中文',
-        direction: 'ltr',
-        htmlLang: 'zh-CN',
-        calendar: 'gregory',
-        path: 'zh',
-      }
     }
   },
 
@@ -59,9 +57,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          // path: 'docs',
+          // routeBasePath: 'docs',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          editLocalizedFiles: true,
           editUrl:
             'https://github.com/Sakura-Pi/docs.sakurapi.org/tree/main/',
         },
@@ -90,19 +91,19 @@ const config = {
   themes: [
     // ... Your other themes.
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      '@easyops-cn/docusaurus-search-local',
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
+      {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
 
         // For Docs using Chinese, it is recomended to set:
-        // language: ["en", "zh"],
+        language: ["en", "zh"],
 
         // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
         // forceIgnoreNoIndex: true,
-      }),
+      },
     ],
   ],
 
@@ -130,15 +131,15 @@ const config = {
             position: 'left',
             label: 'Download',
           },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
-          },
-          {
-              type: 'docsVersionDropdown',
-              position: 'right',
-          },
+          // {
+          //   to: '/blog',
+          //   label: 'Blog',
+          //   position: 'left'
+          // },
+          // {
+          //     type: 'docsVersionDropdown',
+          //     position: 'right',
+          // },
           {
               type: 'localeDropdown',
               position: 'right',
