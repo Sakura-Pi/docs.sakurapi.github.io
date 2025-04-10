@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Sakura Pi doc ',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://docs.sakurapi.org',
@@ -63,24 +63,22 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editLocalizedFiles: true,
-          editUrl:
-            'https://github.com/Sakura-Pi/docs.sakurapi.org/tree/main/',
+          editUrl: 'https://github.com/Sakura-Pi/docs.sakurapi.org',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Sakura-Pi/docs.sakurapi.org/tree/main/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: 'https://github.com/Sakura-Pi/docs.sakurapi.org/tree/main/',
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -114,10 +112,6 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: '🌸 Sakura Pi',
-        logo: {
-          alt: 'Sakura Pi Logo',
-          src: 'img/logo.svg',
-        },
         items: [
           {
             type: 'docSidebar',
@@ -131,23 +125,14 @@ const config = {
             position: 'left',
             label: 'Download',
           },
-          // {
-          //   to: '/blog',
-          //   label: 'Blog',
-          //   position: 'left'
-          // },
-          // {
-          //     type: 'docsVersionDropdown',
-          //     position: 'right',
-          // },
           {
               type: 'localeDropdown',
               position: 'right',
           },
           {
             href: 'https://github.com/Sakura-Pi',
-                        position: 'right',
-                        className: 'navbar__item navbar__link header-github-link',
+            position: 'right',
+            className: 'navbar__item navbar__link header-github-link',
             'aria-label': 'GitHub repository',
           },
         ],

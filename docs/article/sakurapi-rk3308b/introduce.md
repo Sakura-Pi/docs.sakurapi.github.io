@@ -1,10 +1,16 @@
 ---
 sidebar_position: 1
+title: 介绍
+sidebar_label: 介绍
 ---
 
 # 基本介绍
 
-Sakura Pi RK3308B 是我们首款正式发售的SBC，是一款基于 Rockchip RK3308B SoC 的低功耗、低成本开发板。
+Sakura Pi RK3308B 是我们首款正式发售的SBC。
+
+它是一款搭载 Rockchip RK3308B SoC 的低功耗、低成本开发板。
+
+![board-shot](./img/board-shot.jpg)
 
 ### 处理器
 
@@ -24,6 +30,7 @@ Sakura Pi RK3308B 的基本配置参数如下
 - LCD: RGB666接口
 
 TODO:主板各个元器件的分布图介绍
+
 
 ### 基准测试
 
