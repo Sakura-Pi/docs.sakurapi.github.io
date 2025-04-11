@@ -10,7 +10,7 @@ Sakura Pi RK3308B 是我们首款正式发售的SBC。
 
 它是一款搭载 Rockchip RK3308B SoC 的低功耗、低成本开发板。
 
-![board-shot](./img/board-shot.jpg)
+![board-shot](./img/board-shot.webp)
 
 ### 处理器
 
