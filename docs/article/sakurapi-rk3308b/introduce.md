@@ -10,7 +10,7 @@ Sakura Pi RK3308B 是我们首款正式发售的SBC。
 
 它是一款搭载 Rockchip RK3308B SoC 的低功耗、低成本开发板。
 
-![board-shot](./img/board-shot.jpg)
+![board-shot](./img/board-shot.webp)
 
 ### 处理器
 
@@ -31,13 +31,20 @@ Sakura Pi RK3308B 的基本配置参数如下
 
 TODO:主板各个元器件的分布图介绍
 
+### 引脚定义
+
+Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。
+
+u-boot 和 kernel 默认使用 UART2 作为输出端口
+
+![rk3308b-pinout](./img/board-pinout.svg)
+
+
 
 ### 基准测试
 
 
-### 引脚定义
 
-Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。
 
 ### 引用
 - [1] AP6255 datasheet_V1.2_06202016.pdf
