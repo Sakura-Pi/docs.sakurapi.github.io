@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-title: Building Armbian
-sidebar_label: Building Armbian
+title: Build Armbian
+sidebar_label: Build Armbian
 ---
 
 import BuildGuide from '../../common/build_armbian.md';

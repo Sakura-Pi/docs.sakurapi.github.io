@@ -3,10 +3,6 @@
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"
   },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回到顶部",
-    "description": "The ARIA label for the back to top button"
-  },
   "theme.blog.archive.title": {
     "message": "历史博文",
     "description": "The page & hero title of the blog archive page"
@@ -26,6 +22,10 @@
   "theme.blog.paginator.olderEntries": {
     "message": "较旧的博文",
     "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "回到顶部",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.post.paginator.navAriaLabel": {
     "message": "博文分页导航",
@@ -55,13 +55,13 @@
     "message": "浅色模式",
     "description": "The name for the light color mode"
   },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} 个项目",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
   "theme.docs.breadcrumbs.navAriaLabel": {
     "message": "页面路径",
     "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} 个项目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
     "message": "文件选项卡",
@@ -122,13 +122,13 @@
     "message": "最后{byUser}{atDate}更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.NotFound.title": {
-    "message": "找不到页面",
-    "description": "The title of the 404 page"
-  },
   "theme.navbar.mobileVersionsDropdown.label": {
     "message": "选择版本",
     "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "找不到页面",
+    "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
     "message": "标签：",
@@ -190,6 +190,14 @@
     "message": "折叠侧边栏分类 '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
+  "theme.NavBar.navAriaLabel": {
+    "message": "主导航",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "选择语言",
+    "description": "The label for the mobile language switcher dropdown"
+  },
   "theme.NotFound.p1": {
     "message": "我们找不到您要找的页面。",
     "description": "The first paragraph of the 404 page"
@@ -198,25 +206,9 @@
     "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。",
     "description": "The 2nd paragraph of the 404 page"
   },
-  "theme.NavBar.navAriaLabel": {
-    "message": "主导航",
-    "description": "The ARIA label for the main navigation"
-  },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "本页总览",
     "description": "The label used by the button on the collapsible TOC component"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "选择语言",
-    "description": "The label for the mobile language switcher dropdown"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需 {readingTime} 分钟",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "主页面",
-    "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.blog.post.readMore": {
     "message": "阅读更多",
@@ -226,9 +218,13 @@
     "message": "阅读 {title} 的全文",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "文档侧边栏",
-    "description": "The ARIA label for the sidebar navigation"
+  "theme.blog.post.readingTime.plurals": {
+    "message": "阅读需 {readingTime} 分钟",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "主页面",
+    "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
     "message": "收起侧边栏",
@@ -237,6 +233,10 @@
   "theme.docs.sidebar.collapseButtonAriaLabel": {
     "message": "收起侧边栏",
     "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文档侧边栏",
+    "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
     "message": "关闭导航栏",

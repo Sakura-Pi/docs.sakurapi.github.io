@@ -24,22 +24,18 @@ Sakura Pi RK3308B 的基本配置参数如下
 - 处理器: RK3308B
 - 内存: DDR3 512M 
 - 无线WLAN: 支持IEEE 802.11a/b/g/n/ac,支持2.4GHz/5GHz频段
-- 蓝牙: 支持BLE4.2
+- 蓝牙: 支持 BLE4.2
 - EMMC: 0/8/16G 容量可选
 - 指示灯: WS2812(SPI) * 4
-- LCD: RGB666接口
+- LCD: RGB666 接口
 
 TODO:主板各个元器件的分布图介绍
 
 ### 引脚定义
 
-Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。
-
-u-boot 和 kernel 默认使用 UART2 作为输出端口
+Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。 **u-boot 和 kernel 默认使用 UART2 作为输出端口**
 
 ![rk3308b-pinout](./img/board-pinout.svg)
-
-
 
 ### 基准测试
 
@@ -47,11 +43,11 @@ u-boot 和 kernel 默认使用 UART2 作为输出端口
 
 |CPU主频|单核跑分|多核跑分|
 |--|--|--|
-|1.0Ghz|172.2|563.4|
-|1.3Ghz|210.3|671.9|
+|1.0GHz|172.2|563.4|
+|1.3GHz|210.3|671.9|
 
 <details>
-  <summary>1.0Ghz UnixBench</summary>
+  <summary>1.0GHz UnixBench</summary>
   ```
   ========================================================================
    BYTE UNIX Benchmarks (Version 5.1.3)
@@ -139,7 +135,7 @@ System Benchmarks Index Score                                         563.4
 </details>
 
 <details>
-  <summary>1.3Ghz UnixBench</summary>
+  <summary>1.3GHz UnixBench</summary>
   ```
 ========================================================================
    BYTE UNIX Benchmarks (Version 5.1.3)
@@ -226,7 +222,14 @@ System Benchmarks Index Score                                         671.9
   ```
 </details>
 
+#### LLVMPipe GLSL
+我们使用 LLVMPipe 渲染 ShaderToy 的着色器，以CPU 1.3GHz的频率进行压力测试。在未加任何散热情况下，结温在140度左右。
+
+[https://github.com/astefanutti/kms-glsl](https://github.com/astefanutti/kms-glsl)
+
+![rk3308b-stress-test](./img/stress-test.jpg)
+
 ### 引用
 - [1] AP6255 datasheet_V1.2_06202016.pdf
-<a href="./res/AP6255 datasheet_V1.2_06202016.pdf">aa</a>
+<a href="./res/AP6255 datasheet_V1.2_06202016.pdf"></a>
 

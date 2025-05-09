@@ -10,8 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Sakura Pi doc ',
-  tagline: 'Dinosaurs are cool',
+  title: 'Sakura Pi doc website',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
@@ -28,25 +27,26 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  staticDirectories: ['static'],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-CN',
-    locales: ['zh-CN', 'en'],
+    defaultLocale: 'zh',
+    locales: ['en', 'zh'],
     localeConfigs: {
-      'zh-CN': {
-        label: '简体中文',
-        direction: 'ltr',
-        htmlLang: 'zh-CN',
-        calendar: 'gregory',
-      },
-      en: {
+      'en': {
         label: 'English',
         direction: 'ltr',
         htmlLang: 'en-US',
         calendar: 'gregory',
-        path: '/en/',
+      },
+      'zh': {
+        label: '简体中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN',
+        calendar: 'gregory',
       },
     }
   },
@@ -58,27 +58,22 @@ const config = {
       ({
         docs: {
           // path: 'docs',
-          // routeBasePath: 'docs',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editLocalizedFiles: true,
           editUrl: 'https://github.com/Sakura-Pi/docs.sakurapi.org',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl: 'https://github.com/Sakura-Pi/docs.sakurapi.org/tree/main/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
+        blog: {
+          routeBasePath: '/blog/',
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -113,28 +108,11 @@ const config = {
       navbar: {
         title: '🌸 Sakura Pi',
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'getStarted',
-            position: 'left',
-            label: 'Get Started',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'download',
-            position: 'left',
-            label: 'Download',
-          },
-          {
-              type: 'localeDropdown',
-              position: 'right',
-          },
-          {
-            href: 'https://github.com/Sakura-Pi',
-            position: 'right',
-            className: 'navbar__item navbar__link header-github-link',
-            'aria-label': 'GitHub repository',
-          },
+          { type: 'docSidebar', sidebarId: 'getStarted', position: 'left', label: 'NavBar.GetStarted' },
+          { type: 'docSidebar', sidebarId: 'download',   position: 'left', label: 'NavBar.Download' },
+          { to:   'blog', position: 'left', label: 'NavBar.Blog'}     ,
+          { type: 'localeDropdown', position: 'right' },
+          { href: 'https://github.com/Sakura-Pi', position: 'right',  className: 'navbar__item navbar__link header-github-link', 'aria-label': 'GitHub repository' },
         ],
       },
       footer: {

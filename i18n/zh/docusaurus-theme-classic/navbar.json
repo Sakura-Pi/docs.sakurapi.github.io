@@ -4,15 +4,15 @@
     "description": "The title in the navbar"
   },
   "item.label.NavBar.GetStarted": {
-    "message": "Get Started",
+    "message": "快速开始",
     "description": "Navbar item with label NavBar.GetStarted"
   },
   "item.label.NavBar.Download": {
-    "message": "Download",
+    "message": "下载",
     "description": "Navbar item with label NavBar.Download"
   },
   "item.label.NavBar.Blog": {
-    "message": "Blog",
+    "message": "新鲜的事",
     "description": "Navbar item with label NavBar.Blog"
   }
 }

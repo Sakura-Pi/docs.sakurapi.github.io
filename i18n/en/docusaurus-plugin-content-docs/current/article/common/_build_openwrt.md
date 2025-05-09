@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
-title: Building OpenWrt
-sidebar_label: Building OpenWrt
+title: 编译openwrt
+sidebar_label: 编译openwrt
 ---
 
 import BuildGuide from '../../common/build_openwrt.md';

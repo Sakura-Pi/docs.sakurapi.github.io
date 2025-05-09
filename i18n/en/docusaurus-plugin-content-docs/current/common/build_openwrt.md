@@ -1,6 +1,6 @@
 ---
-title: Building OpenWrt
-sidebar_label: Building OpenWrt
+title: 编译openwrt
+sidebar_label: 编译openwrt
 ---
 
 TODO

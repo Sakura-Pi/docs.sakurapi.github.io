@@ -1,6 +1,6 @@
 ---
-title: Building Buildroot
-sidebar_label: Building Buildroot
+title: 编译buildroot
+sidebar_label: 编译buildroot
 ---
 
 TODO
