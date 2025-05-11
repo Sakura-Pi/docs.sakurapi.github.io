@@ -6,8 +6,7 @@ sidebar_label: Brief
 
 # Introduce
 
-Sakura Pi RK3308B is our first officially released SBC.
-
+Sakura Pi RK3308B is our first officially released SBC.  
 It is a low-power, cost-effective development board powered by the Rockchip RK3308B SoC.
 
 ![board-shot](./img/board-shot.webp)
@@ -223,13 +222,12 @@ System Benchmarks Index Score                                         671.9
 </details>
 
 #### LLVMPipe GLSL
-We use LLVMPipe to render ShaderToy shaders, conducting stress tests at a CPU frequency of 1.3GHz. Without any additional cooling, the junction temperature reaches around 140 degrees Celsius.
+:::info
+GitHub Repository **[astefanutti/kms-glsl](https://github.com/astefanutti/kms-glsl)**  
 
-[https://github.com/astefanutti/kms-glsl](https://github.com/astefanutti/kms-glsl)
+kms-glsl can rendering glsl shaders via GPU，but RK3308B doesn't has a GPU hardware
+thus causes Linux forces use LLVMPipe to render it.
+:::
+We use LLVMPipe to render glsl shaders, conducting stress tests at a CPU frequency of 1.3GHz. Without any additional cooling, the junction temperature reaches around 140 degrees Celsius.
 
 ![rk3308b-stress-test](./img/stress-test.jpg)
-
-### Reference
-- [1] AP6255 datasheet_V1.2_06202016.pdf
-<a href="./res/AP6255 datasheet_V1.2_06202016.pdf"></a>
-

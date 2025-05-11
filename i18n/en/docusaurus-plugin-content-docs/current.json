@@ -10,5 +10,13 @@
   "sidebar.getStarted.category.Sakura Pi RK3308B.link.generated-index.description": {
     "message": "",
     "description": "The generated-index page description for category Sakura Pi RK3308B in sidebar getStarted"
+  },
+  "sidebar.docs.category.Sakura Pi RK3308B": {
+    "message": "Sakura Pi RK3308B",
+    "description": "The label for category Sakura Pi RK3308B in sidebar docs"
+  },
+  "sidebar.docs.category.一起来玩": {
+    "message": "Playground",
+    "description": "The label for category 一起来玩 in sidebar docs"
   }
 }
