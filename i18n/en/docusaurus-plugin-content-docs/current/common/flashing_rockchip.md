@@ -6,13 +6,13 @@ sidebar_label: Flashing
 ### Tools
 | Name | Platform | Version | Link |
 |:--|:--|:--|:--|
-|DriverAssitant|Windows|v5.0|[🔗 Download](DriverAssitant_v5.0.zip)|
-|RKDevTool|Windows|v2.81|[🔗 Download](RKDevTool_Release_v2.81.zip)|
+|DriverAssitant|Windows|v5.0|[🔗 Download](bin/DriverAssitant_v5.0.zip)|
+|RKDevTool|Windows|v2.81|[🔗 Download](bin/DRKDevTool_Release_v2.81.zip)|
 
 ### Mini Loader
 | SoC | Version | Link |
 |:--|:--|:--|
-| RK3308B | 20190717 | [🔗 Download](rk3308_loader_uart0_m0_emmc_port_support_sd_20190717_old.bin) |
+| RK3308B | 20190717 | [🔗 Download](bin/Drk3308_loader_uart0_m0_emmc_port_support_sd_20190717_old.bin) |
 
 ### Flash Steps (Windows)
 #### Driver Install

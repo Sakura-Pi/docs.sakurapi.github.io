@@ -6,13 +6,13 @@ sidebar_label: 系统烧录
 ### 烧录工具
 | 工具名称 | 操作系统 | 版本 | 下载地址 |
 |:--|:--|:--|:--|
-|DriverAssitant|Windows|v5.0|[🔗 点击下载](DriverAssitant_v5.0.zip)|
-|RKDevTool|Windows|v2.81|[🔗 点击下载](RKDevTool_Release_v2.81.zip)|
+|DriverAssitant|Windows|v5.0|[🔗 点击下载](bin/DriverAssitant_v5.0.zip)|
+|RKDevTool|Windows|v2.81|[🔗 点击下载](bin/RKDevTool_Release_v2.81.zip)|
 
 ### Loader文件
 | 适用平台 | 版本 | 下载地址 |
 |:--|:--|:--|
-| RK3308B | 20190717 | [🔗 点击下载](rk3308_loader_uart0_m0_emmc_port_support_sd_20190717_old.bin) |
+| RK3308B | 20190717 | [🔗 点击下载](bin/rk3308_loader_uart0_m0_emmc_port_support_sd_20190717_old.bin) |
 
 ### 烧录步骤(Windows)
 #### 安装驱动
