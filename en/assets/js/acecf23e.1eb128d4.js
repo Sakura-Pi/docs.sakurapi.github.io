@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sakurapi_org=self.webpackChunkdocs_sakurapi_org||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/en/blog/","blogTitle":"Blog","authorsListPath":"/en/blog/authors"}')}}]);

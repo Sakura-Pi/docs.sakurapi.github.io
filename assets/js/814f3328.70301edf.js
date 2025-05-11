@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_sakurapi_org=self.webpackChunkdocs_sakurapi_org||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome Docusaurus","permalink":"/blog/welcome-docusaurus-v2","unlisted":false,"date":"2025-05-11T10:22:24.000Z"}]}')}}]);
