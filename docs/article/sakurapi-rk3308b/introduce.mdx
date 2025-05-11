@@ -6,8 +6,7 @@ sidebar_label: 介绍
 
 # 基本介绍
 
-Sakura Pi RK3308B 是我们首款正式发售的SBC。
-
+Sakura Pi RK3308B 是我们首款正式发售的SBC。  
 它是一款搭载 Rockchip RK3308B SoC 的低功耗、低成本开发板。
 
 ![board-shot](./img/board-shot.webp)
@@ -20,6 +19,9 @@ Sakura Pi RK3308B 是我们首款正式发售的SBC。
 ![rk3308b-diagram](./img/rk3308b-diagram.jpg)
 
 ### 特征
+:::info TODO: 主板各个元器件的分布图介绍
+:::
+
 Sakura Pi RK3308B 的基本配置参数如下
 - 处理器: RK3308B
 - 内存: DDR3 512M 
@@ -29,9 +31,9 @@ Sakura Pi RK3308B 的基本配置参数如下
 - 指示灯: WS2812(SPI) * 4
 - LCD: RGB666 接口
 
-TODO:主板各个元器件的分布图介绍
-
 ### 引脚定义
+:::info TODO: 需要补充
+:::
 
 Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。 **u-boot 和 kernel 默认使用 UART2 作为输出端口**
 
@@ -223,13 +225,11 @@ System Benchmarks Index Score                                         671.9
 </details>
 
 #### LLVMPipe GLSL
-我们使用 LLVMPipe 渲染 ShaderToy 的着色器，以CPU 1.3GHz的频率进行压力测试。在未加任何散热情况下，结温在140度左右。
+:::info
+[astefanutti/kms-glsl](https://github.com/astefanutti/kms-glsl) 可以调用 GPU 渲染 glsl 着色器，但由于 RK3308B 并没有 GPU  
+这将导致 Linux 使用 LLVMPipe 强制进行软件渲染。
+:::
 
-[https://github.com/astefanutti/kms-glsl](https://github.com/astefanutti/kms-glsl)
+我们使用 LLVMPipe 去渲染 glsl 着色器，以CPU 1.3GHz的频率进行压力测试。在未加任何散热情况下，结温在140度左右。
 
 ![rk3308b-stress-test](./img/stress-test.jpg)
-
-### 引用
-- [1] AP6255 datasheet_V1.2_06202016.pdf
-<a href="./res/AP6255 datasheet_V1.2_06202016.pdf"></a>
-

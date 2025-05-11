@@ -3,9 +3,9 @@
     "message": "🌸 Sakura Pi",
     "description": "The title in the navbar"
   },
-  "item.label.NavBar.GetStarted": {
-    "message": "Get Started",
-    "description": "Navbar item with label NavBar.GetStarted"
+  "item.label.NavBar.Docs": {
+    "message": "Documentation",
+    "description": "Navbar item with label NavBar.Docs"
   },
   "item.label.NavBar.Download": {
     "message": "Download",

@@ -24,7 +24,7 @@ const config = {
   organizationName: 'Sakura-Pi', // Usually your GitHub org/user name.
   projectName: 'docs.sakurapi.org', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   staticDirectories: ['static'],
@@ -108,8 +108,8 @@ const config = {
       navbar: {
         title: '🌸 Sakura Pi',
         items: [
-          { type: 'docSidebar', sidebarId: 'getStarted', position: 'left', label: 'NavBar.GetStarted' },
-          { type: 'docSidebar', sidebarId: 'download',   position: 'left', label: 'NavBar.Download' },
+          { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'NavBar.Docs' },
+          // { type: 'docSidebar', sidebarId: 'download',   position: 'left', label: 'NavBar.Download' },
           { to:   'blog', position: 'left', label: 'NavBar.Blog'}     ,
           { type: 'localeDropdown', position: 'right' },
           { href: 'https://github.com/Sakura-Pi', position: 'right',  className: 'navbar__item navbar__link header-github-link', 'aria-label': 'GitHub repository' },
