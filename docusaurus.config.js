@@ -22,7 +22,9 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Sakura-Pi', // Usually your GitHub org/user name.
-  projectName: 'docs.sakurapi.org', // Usually your repo name.
+  projectName: 'docs.sakurapi.github.io', // Usually your repo name.
+  trailingSlash: false,
+  deploymentBranch: 'deployment',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
