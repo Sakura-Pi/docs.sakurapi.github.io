@@ -61,7 +61,7 @@ Sakura Pi RK3308B的设备树默认的分辨率为800x480，但即使是分辨�
 
 ### 配置 dtbo
 
-如果你需要自订 dtso，那么对于我们这个开发板需要写成下面这样。其中compatible是对应的屏幕型号。
+如果你需要自订 dtso，那么对于我们这个开发板需要写成下面这样。其中compatible是对应的屏幕型号。屏幕型号对应分辨率参考[panel-simple.yaml](https://github.com/torvalds/linux/blob/master/Documentation/devicetree/bindings/display/panel/panel-simple.yaml)或者[panel-simple.c](https://elixir.bootlin.com/linux/v6.14.6/source/drivers/gpu/drm/panel/panel-simple.c)
 <details>
   <summary>rockchip-sakurapi-rk3308b-display@480x272.dtso</summary>
 ```dts
@@ -80,3 +80,50 @@ Sakura Pi RK3308B的设备树默认的分辨率为800x480，但即使是分辨�
 
 ```
 </details>
+
+## 向屏幕缓冲区写入数据
+
+在shell中，可以使用以下命令向屏幕缓冲区写入随机数据
+```
+cat /dev/random > /dev/fb0
+```
+在c中，可以使用mmap映射屏幕缓冲区
+<details>
+  <summary>display_test.c</summary>
+```
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <linux/fb.h>
+#include <sys/ioctl.h>
+#include <stdint.h>
+
+int main() {
+    int fb = open("/dev/fb0", O_RDWR);
+
+    struct fb_var_screeninfo vinfo;
+    struct fb_fix_screeninfo finfo;
+    ioctl(fb, FBIOGET_VSCREENINFO, &vinfo);
+    ioctl(fb, FBIOGET_FSCREENINFO, &finfo);
+
+    int screensize = finfo.line_length * vinfo.yres;
+    uint32_t *fbp = mmap(0, screensize, PROT_READ | PROT_WRITE, MAP_SHARED, fb, 0);
+
+    for (int y = 0; y < vinfo.yres; y++) {
+        for (int x = 0; x < vinfo.xres; x++) {
+            int loc = y * (finfo.line_length / 4) + x;
+            fbp[loc] = 0xFF0000FF;  // 红色 RGBA: R=255, G=0, B=0, A=255
+        }
+    }
+
+    munmap(fbp, screensize);
+    close(fb);
+    return 0;
+}
+```
+</details>
+
+## 播放坏苹果
+
+:::info TODO: 需要补充
+:::
