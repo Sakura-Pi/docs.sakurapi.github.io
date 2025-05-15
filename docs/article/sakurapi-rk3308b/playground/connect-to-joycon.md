@@ -64,15 +64,9 @@ Attempting to pair with AA:BB:CC:DD:EE:FF
 [CHG] Device AA:BB:CC:DD:EE:FF Bonded: yes
 [CHG] Device AA:BB:CC:DD:EE:FF Modalias: usb:v057Ep2006d0001
 [CHG] Device AA:BB:CC:DD:EE:FF UUIDs: 00001000-0000-1000-8000-00805f9b34fb
-[CHG] Device AA:BB:CC:DD:EE:FF UUIDs: 00001124-0000-1000-8000-00805f9b34fb
-[CHG] Device AA:BB:CC:DD:EE:FF UUIDs: 00001200-0000-1000-8000-00805f9b34fb
 [CHG] Device AA:BB:CC:DD:EE:FF ServicesResolved: yes
 [CHG] Device AA:BB:CC:DD:EE:FF Paired: yes
 Pairing successful
-[CHG] Device AA:BB:CC:DD:EE:FF WakeAllowed: yes
-[CHG] Device 7C:C2:94:C4:36:B3 RSSI: -90
-[CHG] Device AA:BB:CC:DD:EE:FF ServicesResolved: no
-[CHG] Device AA:BB:CC:DD:EE:FF Connected: no
 ```
 
 等待 Pairing successful，然后立刻 `connect AA:BB:CC:DD:EE:FF`
