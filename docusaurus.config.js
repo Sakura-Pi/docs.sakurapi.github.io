@@ -125,6 +125,17 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      headTags: [
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'alternate',
+            href: '/RobotReadMe.html',
+            type: 'text/html',
+            title: 'Robot ReadMe'
+          },
+        },
+      ],
     })
 };
 
