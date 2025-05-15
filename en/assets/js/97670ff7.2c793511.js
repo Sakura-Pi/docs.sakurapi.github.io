@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_sakurapi_org=self.webpackChunkdocs_sakurapi_org||[]).push([[657],{9550:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/en/blog/","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

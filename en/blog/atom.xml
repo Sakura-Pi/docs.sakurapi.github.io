@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://docs.sakurapi.org/en/blog/</id>
+    <id>https://docs.sakurapi.org/en/blog</id>
     <title>Sakura Pi doc website Blog</title>
     <updated>2025-05-11T10:22:24.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://docs.sakurapi.org/en/blog/"/>
+    <link rel="alternate" href="https://docs.sakurapi.org/en/blog"/>
     <subtitle>Sakura Pi doc website Blog</subtitle>
     <icon>https://docs.sakurapi.org/en/img/favicon.png</icon>
     <entry>
