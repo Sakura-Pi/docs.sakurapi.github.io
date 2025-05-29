@@ -59,8 +59,7 @@ https://github.com/Sakura-Pi/ws2812-vleds
 
 ### 配置 dtbo
 
-该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。**如果你想直接使用它，请在 `/boot/armbianEnv.txt` 
-的 overlays 行加入 sakurapi-rk3308b-ws2812 即可 (如果没有这行就添加)**。  
+该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。**如果你想直接使用它，请在 `/boot/armbianEnv.txt` 的 overlays 行加入 sakurapi-rk3308b-ws2812 即可 (如果没有这行就添加)**。  
 
 ![Snipaste_2025-05-14_21-11-28.jpg](./ws2812-leds/Snipaste_2025-05-14_21-11-28.jpg)
 
