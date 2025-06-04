@@ -22,6 +22,7 @@ title: 连接 RGB 显示屏
 | VOP | Video Output Processor |
 | dtb | Device Tree Binary |
 | dtbo | DTB Overlay |
+| dtso | DTS Overlay |
 
 1. VOP 是 Rockchip 的视频输出模块，负责简单平面叠加、填充、光标、Alpha Blend 等基础 2D 图形功能。
 
@@ -56,14 +57,19 @@ Sakura Pi RK3308B 有一个 40Pin 的标准 DPI 接口。
 Sakura Pi RK3308B的设备树默认的分辨率为800x480，但即使是分辨率不匹配，部分屏幕依旧可以工作，例如"RFH043BIVI40A027-V2(EP4306)"，可以显示480x272区域的图像，而更大分辨率的屏幕，部分屏幕可以显示，在800x480之外的区域，会有异常的图像显示。
 
 ### 使用 dtbo
-该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。或者在 [选择屏幕型号](#选择屏幕型号) 章节下载屏幕的 dtbo。**如果你想直接使用它，请在 `/boot/armbianEnv.txt` 
-的 overlays 行加入 sakurapi-rk3308b-display@480x272 即可 (如果没有这行就添加，分辨率为自己屏幕的分辨率，如果没有支持，需自行配置dtbo)**。  
+该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。或者你也可以在 [选择屏幕型号](#选择屏幕型号) 章节下载合适自己屏幕的 dtbo。
 
-### 配置 dtbo
+**配置使用dtbo时，请在 `/boot/armbianEnv.txt` 
+的 overlays 行加入 sakurapi-rk3308b-display@480x272 即可 (如果没有这行就添加，分辨率为自己屏幕的分辨率，如果没有支持，需自行编译dtbo)**。  
 
-如果你需要自订 dtso，那么对于我们这个开发板需要写成下面这样。其中compatible是对应的屏幕型号。屏幕型号对应分辨率参考[panel-simple.yaml](https://github.com/torvalds/linux/blob/master/Documentation/devicetree/bindings/display/panel/panel-simple.yaml)或者[panel-simple.c](https://elixir.bootlin.com/linux/v6.14.6/source/drivers/gpu/drm/panel/panel-simple.c)
-<details>
-  <summary>rockchip-sakurapi-rk3308b-display@480x272.dtso</summary>
+### 为自己的屏幕编写 dtso
+
+如果你需要自订 dtso，那么对于我们这个开发板需要写成下面这样。其中 compatible 是对应的屏幕型号。在内核驱动 probe 的过程中，该字段下的 `edt,etm0430g0dh6` 会被 [panel-simple.c #L1941-L1952](https://elixir.bootlin.com/linux/v6.14.6/source/drivers/gpu/drm/panel/panel-simple.c#L1941-L1952) 识别并映射到模块内已适配过的屏幕所对应的参数上。
+
+:::tip 屏幕型号
+你可以在 [panel-simple.yaml](https://github.com/torvalds/linux/blob/master/Documentation/devicetree/bindings/display/panel/panel-simple.yaml) 找到主线内核支持的所有屏幕型号，以及类似屏幕的参数参考
+:::
+
 ```dts
 /dts-v1/;
 /plugin/;
@@ -77,9 +83,43 @@ Sakura Pi RK3308B的设备树默认的分辨率为800x480，但即使是分辨�
         };
     };
 };
-
 ```
-</details>
+
+如果你的屏幕过于~先进~，还没有被内核支持，那么情况就更复杂一些。你需要写成下面这个样子。你可能会注意到 compatible 字段变成了 `panel-dpi`。这是因为 [panel-simple.c #L5217-L5218](https://elixir.bootlin.com/linux/v6.14.6/source/drivers/gpu/drm/panel/panel-simple.c#L5217-L5218) 有一个兜底 probe。当我们使用它的时候，我们就可以在设备树中自由编写屏幕所需要的参数，从而避免去编辑内核代码的麻烦。
+而解析 panel-timing 的地方位于 [panel-simple.c #L435-L479](https://elixir.bootlin.com/linux/v6.14.6/source/drivers/gpu/drm/panel/panel-simple.c#L435-L479)。
+
+```dts
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target = <&display>;
+        __overlay__ {
+            compatible = "panel-dpi";
+            status = "okay";
+
+            panel-timing {
+                clock-frequency = <25000000>; // 单位 Hz
+                hactive = <800>;
+                vactive = <480>;
+                hfront-porch = <8>;
+                hback-porch = <8>;
+                hsync-len = <4>;
+                vfront-porch = <16>;
+                vback-porch = <16>;
+                vsync-len = <4>;
+
+                hsync-active = <0>;   // 0：低电平有效，1：高电平有效
+                vsync-active = <0>;
+                de-active = <1>;      // 通常是 1
+                pixelclk-active = <1>; // 对应 DISPLAY_FLAGS_PIXDATA_POSEDGE
+            };
+        };
+    };
+};
+```
+
 
 ## 向屏幕缓冲区写入数据
 
