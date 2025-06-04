@@ -1,0 +1,12 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target = <&display>;
+        __overlay__ {
+            compatible = "edt,et070080dh6";
+            status = "okay";
+        };
+    };
+};

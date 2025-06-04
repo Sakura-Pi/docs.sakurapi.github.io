@@ -38,13 +38,13 @@ Sakura Pi RK3308B 有一个 40Pin 的标准 DPI 接口。
 必要情况下(如遇到画面闪烁、不亮等)，请使用外置的背光供电板或更换屏幕。
 :::
 
-| 型号 | 尺寸 | 大约价格 |
-| -- | -- | -- |
-| GL043056B0-40 | 4.3"@480x272 | 22CNY ~ 45CNY |
-| RFH043X4024-01(EP4307) | 4.3"@480X272 | 20CNY |
-| RFH043BIVI40A027-V2(EP4306) | 4.3"@480X272 | 25CNY |
-| KD50G6-40TM-A1 | 5.0"@800x480 | 50CNY |
-| MD050NL42-40-12A | 5.0"@800x480 | 60CNY |
+| 型号 | 尺寸 | 大约价格 | 设备树文件 |
+| -- | -- | -- | -- |
+| GL043056B0-40 | 4.3"@480x272 | 22CNY ~ 45CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo').default}>rockchip-sakurapi-rk3308b-display@480x272.dtbo</a> |
+| RFH043X4024-01(EP4307) | 4.3"@480X272 | 20CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo').default}>rockchip-sakurapi-rk3308b-display@480x272.dtbo</a> |
+| RFH043BIVI40A027-V2(EP4306) | 4.3"@480X272 | 25CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo').default}>rockchip-sakurapi-rk3308b-display@480x272.dtbo</a> |
+| KD50G6-40TM-A1 | 5.0"@800x480 | 50CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@800x480.dtbo').default}>rockchip-sakurapi-rk3308b-display@800x480.dtbo</a> |
+| MD050NL42-40-12A | 5.0"@800x480 | 60CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@800x480.dtbo').default}>rockchip-sakurapi-rk3308b-display@800x480.dtbo</a> |
 
 ## 上电开机
 
@@ -56,7 +56,7 @@ Sakura Pi RK3308B 有一个 40Pin 的标准 DPI 接口。
 Sakura Pi RK3308B的设备树默认的分辨率为800x480，但即使是分辨率不匹配，部分屏幕依旧可以工作，例如"RFH043BIVI40A027-V2(EP4306)"，可以显示480x272区域的图像，而更大分辨率的屏幕，部分屏幕可以显示，在800x480之外的区域，会有异常的图像显示。
 
 ### 使用 dtbo
-该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。**如果你想直接使用它，请在 `/boot/armbianEnv.txt` 
+该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。或者在 [选择屏幕型号](#选择屏幕型号) 章节下载屏幕的 dtbo。**如果你想直接使用它，请在 `/boot/armbianEnv.txt` 
 的 overlays 行加入 sakurapi-rk3308b-display@480x272 即可 (如果没有这行就添加，分辨率为自己屏幕的分辨率，如果没有支持，需自行配置dtbo)**。  
 
 ### 配置 dtbo
