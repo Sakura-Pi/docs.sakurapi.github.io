@@ -40,11 +40,11 @@ Sakura Pi RK3308B 有一个 40Pin 的标准 DPI 接口。
 
 | 型号 | 尺寸 | 大约价格 | 设备树文件 |
 | -- | -- | -- | -- |
-| GL043056B0-40 | 4.3"@480x272 | 22CNY ~ 45CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo').default}>rockchip-sakurapi-rk3308b-display@480x272.dtbo</a> |
-| RFH043X4024-01(EP4307) | 4.3"@480X272 | 20CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo').default}>rockchip-sakurapi-rk3308b-display@480x272.dtbo</a> |
-| RFH043BIVI40A027-V2(EP4306) | 4.3"@480X272 | 25CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo').default}>rockchip-sakurapi-rk3308b-display@480x272.dtbo</a> |
-| KD50G6-40TM-A1 | 5.0"@800x480 | 50CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@800x480.dtbo').default}>rockchip-sakurapi-rk3308b-display@800x480.dtbo</a> |
-| MD050NL42-40-12A | 5.0"@800x480 | 60CNY | <a target="\_blank" href={require('./assets/dt/rockchip-sakurapi-rk3308b-display@800x480.dtbo').default}>rockchip-sakurapi-rk3308b-display@800x480.dtbo</a> |
+| GL043056B0-40 | 4.3"@480x272 | 22CNY ~ 45CNY | [rockchip-sakurapi-rk3308b-display@480x272.dtbo](../assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo) |
+| RFH043X4024-01(EP4307) | 4.3"@480X272 | 20CNY | [rockchip-sakurapi-rk3308b-display@480x272.dtbo](../assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo) |
+| RFH043BIVI40A027-V2(EP4306) | 4.3"@480X272 | 25CNY | [rockchip-sakurapi-rk3308b-display@480x272.dtbo](../assets/dt/rockchip-sakurapi-rk3308b-display@480x272.dtbo) |
+| KD50G6-40TM-A1 | 5.0"@800x480 | 50CNY | [rockchip-sakurapi-rk3308b-display@800x480.dtbo](../assets/dt/rockchip-sakurapi-rk3308b-display@800x480.dtbo) |
+| MD050NL42-40-12A | 5.0"@800x480 | 60CNY | [rockchip-sakurapi-rk3308b-display@800x480.dtbo](../assets/dt/rockchip-sakurapi-rk3308b-display@800x480.dtbo)  |
 
 ## 上电开机
 
