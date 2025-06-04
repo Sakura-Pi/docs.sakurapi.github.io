@@ -18,14 +18,12 @@ Sakura Pi RK3308B 出厂并不预烧录任何系统，所以需要您手动下�
 | 🟢 维护中  | Ubuntu - _**Ubuntu 24.04 Noble**_| 保持最新 | [🔗 点击下载](https://dl.armbian.com/sakurapi-rk3308b/Noble_current_server) |
 
 :::warning
-与树莓派板卡类似，RK3308B没有内置USB-UART桥，需要自备，并接到40Pin中的UART2端口
-
 串口的默认波特率为 `1500000`
 
 当你使用 Armbian 首次开机登录时会提示你进行用户创建和密码重置。
 如果没有提示或遗漏这个过程导致进入不了系统，可以尝试使用默认根账户 `root` 和密码 `1234` 进入系统。
 :::
 
-import FlashingGuide from '../../common/flashing_rockchip.mdx';
+import FlashingGuide from '../../common/flashing_rockchip.md';
 
 <FlashingGuide />
