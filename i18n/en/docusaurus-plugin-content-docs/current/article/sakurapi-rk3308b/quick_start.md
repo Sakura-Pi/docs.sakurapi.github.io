@@ -14,6 +14,6 @@ Currently, the device supports the following operating systems:
 |:--|:--|:--|:--|
 | 🟢 Active  | Armbian - _**Debian 12 Bookworm**_| Latest | [🔗 Download](https://dl.armbian.com/sakurapi-rk3308b/Bookworm_current_minimal) |
 
-import FlashingGuide from '../../common/flashing_rockchip.md';
+import FlashingGuide from '../_common/flashing_rockchip.md';
 
 <FlashingGuide />

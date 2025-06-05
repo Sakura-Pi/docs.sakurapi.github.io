@@ -24,7 +24,7 @@ Sakura Pi RK3308B 是我们首款正式发售的SBC。
 
 Sakura Pi RK3308B 的基本配置参数如下
 - 处理器: RK3308B
-- 内存: DDR3 512M 
+- 内存: DDR3 512M
 - 无线WLAN: 支持IEEE 802.11a/b/g/n/ac,支持2.4GHz/5GHz频段
 - 蓝牙: 支持 BLE4.2
 - EMMC: 0/8/16G 容量可选
@@ -32,10 +32,9 @@ Sakura Pi RK3308B 的基本配置参数如下
 - LCD: RGB666 接口
 
 ### 引脚定义
-:::info TODO: 需要补充
-:::
 
-Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。 **u-boot 和 kernel 默认使用 UART2 作为输出端口**
+Sakura Pi RK3308B 具备与 Raspberry Pi Zero W 兼容的 40 Pin 引脚。   
+**u-boot 和 kernel 默认使用 UART2 作为输出端口**
 
 ![rk3308b-pinout](./img/board-pinout.svg)
 

@@ -24,6 +24,6 @@ Sakura Pi RK3308B 出厂并不预烧录任何系统，所以需要您手动下�
 如果没有提示或遗漏这个过程导致进入不了系统，可以尝试使用默认根账户 `root` 和密码 `1234` 进入系统。
 :::
 
-import FlashingGuide from '../../common/flashing_rockchip.md';
+import FlashingGuide from '../_common/flashing_rockchip.md';
 
 <FlashingGuide />
