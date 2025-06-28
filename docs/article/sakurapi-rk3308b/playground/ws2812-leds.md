@@ -7,7 +7,7 @@ title: 点亮板载 WS2812 LED
 :::
 
 :::tip 章节提示
-本文讲述了如何使用 spidev 或我们的内核驱动点亮板载 WS2812 LED
+本章节将指导你如何使用 spidev 或我们的内核驱动点亮板载 WS2812 LED
 :::
 
 <!-- truncate -->
@@ -132,7 +132,16 @@ https://github.com/Sakura-Pi/build/blob/main/patch/kernel/archive/rockchip64-6.1
 ```bash
 git clone https://github.com/Sakura-Pi/ws2812-vleds --depth 1
 ```
-进入 ws2812-vleds 目录，make 编译并 insmod 之后，就可以通过命令就能看到我们的 WS2812 虚拟 LED 设备了。
+进入 ws2812-vleds 目录，执行以下命令配置驱动功能。
+
+```bash
+$ export CONFIG_WS2812_VLEDS=m
+$ export CONFIG_WS2812_VLEDS_CHANNEL_CONTROL=y
+```
+
+其中，`CONFIG_WS2812_VLEDS=m` 是将本驱动编译成内核模块，`CONFIG_WS2812_VLEDS_CHANNEL_CONTROL=y`是打开驱动的通道控制功能: 如果启用这个选项，驱动将会额外生成红绿蓝三种颜色的虚拟 LED，使我们拥有通过命令行或脚本直接控制 WS2812 灯珠的颜色的能力。
+
+接着编译并 insmod 之后，就可以通过命令就能看到我们的 WS2812 虚拟 LED 设备了。
 
 ```bash
 $ make
@@ -151,7 +160,7 @@ make[1]: Leaving directory '/usr/src/linux-headers-6.12.23-current-rockchip64'
 $ sudo insmod ws2812-vleds.ko
 
 # 查看设备
-$ ls /sys/class/led/
+$ ls /sys/class/leds/
 ```
 
 :::warning 注意事项
@@ -167,6 +176,10 @@ make: *** [Makefile:8: all] Error 2
 ![Snipaste_2025-05-14_21-59-17.jpg](./ws2812-leds/Snipaste_2025-05-14_21-59-17.jpg)
 
 ### 命令行测试
+:::warning 注意事项
+~~WS2812 会比一般 LED 明亮许多，小心瞎眼~~
+:::
+
 ```bash
 echo 255 > /sys/class/leds/<你的 LED 设备名>/brightness
 ```
