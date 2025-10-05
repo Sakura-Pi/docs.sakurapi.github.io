@@ -48,7 +48,7 @@ Sakura Pi Elara 1 的基本参数如下
 FPGA 与 STM32 通过 FMC 总线进行驳接, 其 FMC 总线具备高达 32 Bit 的数据访存宽度以及 26 Bit 的地址寻址能力，
 我们有 fmcapb3 的开源桥接 IP，可以轻松实现 STM32 和 标准 IP 核的无缝移植。
 
-![fmcapb3-diagram](./img/fmcapb3.drawio.svg)
+![fmcapb3-diagram](https://raw.githubusercontent.com/Sakura-Pi/fmcapb3/refs/heads/main/img/diagram.drawio.svg)
 
 此外， IO BANK 6 以及 IO BANK7 的电压可由 PMIC 动态调节，支持外部 Vref。
 
