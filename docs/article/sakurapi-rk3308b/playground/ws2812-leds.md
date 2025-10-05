@@ -53,10 +53,6 @@ https://github.com/Sakura-Pi/ws2812-vleds
 
 但需要注意的是，这个驱动并不适合用来把 WS2812 作为屏幕。
 
-:::warning
-这个驱动目前实现目前还不完整，部分特性还处于开发阶段，请小心使用。
-:::
-
 ### 配置 dtbo
 
 该 dtso 位于 Armbian 的主线仓库内，默认会随着发行版自动编译成 dtbo 并放到 `/boot/dtb/rockchip/overlay` 目录下。**如果你想直接使用它，请在 `/boot/armbianEnv.txt` 的 overlays 行加入 sakurapi-rk3308b-ws2812 即可 (如果没有这行就添加)**。  

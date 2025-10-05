@@ -42,13 +42,19 @@ Sakura Pi Elara 1 的基本参数如下
 
 高云 GW2A-LV18 FPGA 具有 20K LUT，40K SSRAM 以及 828K BSRAM。
 
-作为 Elara 开发板家族的主要特色，Sakura Pi Elara 1 搭载了 高云 GW2A-LV18 FPGA，可通过 STM32 侧随时对其进行离线编程，
+作为 Elara 开发板家族的主要特色，Sakura Pi Elara 1 搭载了 高云 GW2A-LV18 FPGA，可通过 STM32 灵活加载比特流文件，
 也可以通过板载的 JTAG 调试器使用 USB 在线编程。原生支持高云云源 IDE，充分发挥异构的灵活优势。
 
 FPGA 与 STM32 通过 FMC 总线进行驳接, 其 FMC 总线具备高达 32 Bit 的数据访存宽度以及 26 Bit 的地址寻址能力，
-我们有 FMCAPB4 的开源桥接 IP，可以轻松实现 STM32 和 标准 IP 核的无缝移植。
+我们有 fmcapb3 的开源桥接 IP，可以轻松实现 STM32 和 标准 IP 核的无缝移植。
+
+![fmcapb3-diagram](./img/fmcapb3.drawio.svg)
 
 此外， IO BANK 6 以及 IO BANK7 的电压可由 PMIC 动态调节，支持外部 Vref。
+
+:::info fmcapb3 仓库地址
+https://github.com/Sakura-Pi/fmcapb3
+:::
 
 ### 引脚定义
 :::info
