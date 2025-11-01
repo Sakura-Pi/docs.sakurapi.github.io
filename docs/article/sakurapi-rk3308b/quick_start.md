@@ -14,8 +14,9 @@ Sakura Pi RK3308B 出厂并不预烧录任何系统，所以需要您手动下�
 目前本设备支持以下操作系统
 | 状态 | 发行版名称 | 版本 | 下载地址 |
 |:--|:--|:--|:--|
-| 🟢 维护中  | Armbian - _**Debian 12 Bookworm**_| 保持最新 | [🔗 点击下载](https://dl.armbian.com/sakurapi-rk3308b/Bookworm_current_minimal) |
-| 🟢 维护中  | Ubuntu - _**Ubuntu 24.04 Noble**_| 保持最新 | [🔗 点击下载](https://dl.armbian.com/sakurapi-rk3308b/Noble_current_server) |
+| 🟢 维护中  | Armbian - _**Debian 13 Trixie**_| 保持最新 | [🔗 点击下载](https://dl.armbian.com/sakurapi-rk3308b/Trixie_current_minimal) |
+| 🟡 源代码  | OpenWRT | 24.10 | [🔗 GitHub](https://github.com/Sakura-Pi/openwrt/tree/openwrt-24.10) |
+| 🟡 源代码  | Buildroot | 2025.08-rc2 | [🔗 GitHub](https://github.com/Sakura-Pi/buildroot/tree/sakurapi-rk3308b) |
 
 :::warning
 串口的默认波特率为 `1500000`
