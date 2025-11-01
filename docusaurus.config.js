@@ -72,6 +72,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
+          editLocalizedFiles: true,
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
