@@ -4,7 +4,7 @@ title: Brief
 sidebar_label: Brief
 ---
 
-# Introduce
+# Introduction
 
 Sakura Pi RK3308B is our first officially released SBC.  
 It is a low-power, cost-effective development board powered by the Rockchip RK3308B SoC.

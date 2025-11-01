@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-title: Introduction
-sidebar_label: Introduction
+title: Brief
+sidebar_label: Brief
 ---
 
-# Basic Introduction
+# Introduction
 
 Sakura Pi Elara 1 is a heterogeneous development board equipped with an Arm® Cortex-M7 MCU and a Gowin GW2A-LV18 FPGA.  
 With the open-source Elarion interactive terminal, it can easily run MicroPython and custom open-source programs.  
