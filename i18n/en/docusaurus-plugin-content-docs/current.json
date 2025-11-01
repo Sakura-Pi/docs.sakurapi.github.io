@@ -18,5 +18,9 @@
   "sidebar.docs.category.一起来玩": {
     "message": "Playground",
     "description": "The label for category 一起来玩 in sidebar docs"
+  },
+  "sidebar.docs.category.sakurapi-elara-1": {
+    "message": "Sakura Pi Elara 1",
+    "description": "The label for category sakurapi-elara-1 in sidebar docs"
   }
 }
