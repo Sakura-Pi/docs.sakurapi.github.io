@@ -45,21 +45,22 @@ Sakura Pi Elara 1 的基本参数如下
 作为 Elara 开发板家族的主要特色，Sakura Pi Elara 1 搭载了 高云 GW2A-LV18 FPGA，可通过 STM32 灵活加载比特流文件，
 也可以通过板载的 JTAG 调试器使用 USB 在线编程。原生支持高云云源 IDE，充分发挥异构的灵活优势。
 
-FPGA 与 STM32 通过 FMC 总线进行驳接, 其 FMC 总线具备高达 32 Bit 的数据访存宽度以及 26 Bit 的地址寻址能力，
-我们有 fmcapb3 的开源桥接 IP，可以轻松实现 STM32 和 标准 IP 核的无缝移植。
+:::info fmcapb3 仓库地址
+https://github.com/Sakura-Pi/fmcapb3
+:::
+FPGA 与 STM32 通过 FMC 总线进行驳接, 其 FMC 总线具备高达 32 Bit 的数据访存宽度以及 26 Bit 的地址寻址能力，得益于 fmcapb3 的开源桥接 IP，可以轻松实现 STM32 和 标准 IP 核的无缝移植。
 
 ![fmcapb3-diagram](https://raw.githubusercontent.com/Sakura-Pi/fmcapb3/refs/heads/main/img/diagram.drawio.svg)
 
 此外， IO BANK 6 以及 IO BANK7 的电压可由 PMIC 动态调节，支持外部 Vref。
 
-:::info fmcapb3 仓库地址
-https://github.com/Sakura-Pi/fmcapb3
+### 引脚定义
+
+:::info
+本图片是可缩放矢量图形(SVG), 可在 <a target="\_blank" href='/dl/product/sakurapi-elara-1/img/board-pinout.svg'>新标签页内打开大图</a>
 :::
 
-### 引脚定义
-:::info
-待补充引脚定义
-:::
+![sakurapi-elara-1-pinout](./img/board-pinout.svg)
 
 ### 基准测试
 :::info

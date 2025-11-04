@@ -56,9 +56,11 @@ We offer the open-source `fmcapb3` bridge IP, making it easy to achieve seamless
 Additionally, IO BANK 6 and IO BANK 7 support dynamic voltage adjustment via the PMIC and external Vref.
 
 ### Pin Definitions
-:::info
-Pin definitions to be added.
+
+This's a SVG image, you can <a target="\_blank" href='/dl/product/sakurapi-elara-1/img/board-pinout.svg'>Open In the New Tab</a>
 :::
+
+![sakurapi-elara-1-pinout](./img/board-pinout.svg)
 
 ### Benchmarking
 :::info
