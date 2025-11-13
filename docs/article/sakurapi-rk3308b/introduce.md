@@ -19,8 +19,6 @@ Sakura Pi RK3308B 是我们首款正式发售的SBC。
 ![rk3308b-diagram](./img/rk3308b-diagram.jpg)
 
 ### 特征
-:::info TODO: 主板各个元器件的分布图介绍
-:::
 
 Sakura Pi RK3308B 的基本配置参数如下
 - 处理器: RK3308B
