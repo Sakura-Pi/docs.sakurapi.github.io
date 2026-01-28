@@ -14,13 +14,18 @@ sidebar_label: 资料下载
 <a target="\_blank" href={require('./assets/2411220025_ESPRESSIF-ESP32-C3FN4_C2848860.pdf').default}>2411220025_ESPRESSIF-ESP32-C3FN4_C2848860.pdf</a>
 <br/>
 <a target="\_blank" href={require('./assets/E22-M系列模块_UserManual_CN.pdf').default}>E22-M系列模块_UserManual_CN.pdf</a>
+<br/>
+<a target="\_blank" href={require('./assets/E22-M系列模块_UserManual_CN_V1.1.pdf').default}>E22-M系列模块_UserManual_CN_V1.1.pdf</a>
 
 ### 模型
 <a target="\_blank" href={require('./assets/sakurapi-pocket-namiji-3d.zip').default}>sakurapi-pocket-namiji-3d.step</a>
 
 ### 开源固件
 [Meshtastic 兼容固件](https://github.com/ssp97/meshtastic_fw)
+[MeshCore 兼容固件](https://github.com/ssp97/MeshCore_fw) 
 
 ### 预编译固件
 <a target="\_blank" href={require('./assets/fw/firmware-esp32c3-sakurapi-namiji-2.7.18.bc935c0.zip').default}>firmware-esp32c3-sakurapi-namiji-2.7.18.bc935c0.zip</a>
+<br/>
+<a target="\_blank" href={require('./assets/fw/meshcore_sakurapi_namiji-430db06.zip').default}>meshcore_sakurapi_namiji-430db06.zip</a>
 <br/>
