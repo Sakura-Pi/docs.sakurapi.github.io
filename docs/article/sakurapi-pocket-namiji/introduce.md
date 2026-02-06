@@ -17,6 +17,9 @@ Sakura Pi Pocket Namiji 是一款专为 Meshtastic / LoRa Mesh 玩家设计的�
   }}
 />
 
+:::warning 重要提醒
+Sakura Pi Pocket Namiji不支持E290等使用国产LoRa(ChirpIOT)芯片的模块，即使是自行开发程序也不支持。
+:::
 
 ## 特征
 
