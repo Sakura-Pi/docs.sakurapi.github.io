@@ -1,8 +1,3 @@
----
-title: Flashing
-sidebar_label: Flashing
----
-
 ### Tools
 | Name | Platform | Version | Link |
 |:--|:--|:--|:--|
