@@ -30,5 +30,11 @@ sidebar_label: 资料下载
 ### 预编译固件
 <a target="\_blank" href={require('./assets/fw/firmware-esp32c3-sakurapi-namiji-2.7.18.bc935c0.zip').default}>firmware-esp32c3-sakurapi-namiji-2.7.18.bc935c0.zip</a>
 <br/>
+<a target="\_blank" href={require('./assets/fw/firmware-esp32c3-sakurapi-namiji-2.7.19.1888564.zip').default}>firmware-esp32c3-sakurapi-namiji-2.7.19.1888564.zip</a>
+<br/>
+<a target="\_blank" href={require('./assets/fw/firmware-esp32c3-sakurapi-namiji-2.7.20.947c58e.zip').default}>firmware-esp32c3-sakurapi-namiji-2.7.20.947c58e.zip</a>
+<br/>
+<a target="\_blank" href={require('./assets/fw/firmware-esp32c3-sakurapi-namiji-2.7.21.9cfae53.zip').default}>firmware-esp32c3-sakurapi-namiji-2.7.21.9cfae53.zip</a>
+<br/>
 <a target="\_blank" href={require('./assets/fw/meshcore_sakurapi_namiji-430db06.zip').default}>meshcore_sakurapi_namiji-430db06.zip</a>
 <br/>
