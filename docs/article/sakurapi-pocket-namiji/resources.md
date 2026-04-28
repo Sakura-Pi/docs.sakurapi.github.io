@@ -21,7 +21,9 @@ sidebar_label: 资料下载
 <a target="\_blank" href={require('./assets/sakurapi-pocket-namiji-3d.zip').default}>sakurapi-pocket-namiji-3d.step</a>
 
 ### 外壳模型
-<a target="\_blank" href={require('./assets/sakurapi-pocket-namiji-shell-3d.zip').default}>sakurapi-pocket-namiji-shell-3d.step</a>
+<a target="\_blank" href={require('./assets/sakurapi-pocket-namiji-shell-3d-v0.zip').default}>sakurapi-pocket-namiji-shell-3d-v0.step</a>
+<br/>
+<a target="\_blank" href={require('./assets/sakurapi-pocket-namiji-shell-3d-v1.zip').default}>sakurapi-pocket-namiji-shell-3d-v1.zip</a>
 
 ### 开源固件
 * [Meshtastic 兼容固件](https://github.com/ssp97/meshtastic_fw)
