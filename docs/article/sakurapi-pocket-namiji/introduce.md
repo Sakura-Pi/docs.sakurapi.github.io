@@ -3,10 +3,9 @@ sidebar_position: 1
 title: 介绍
 sidebar_label: 介绍
 ---
-
 # 基本介绍
 
-Sakura Pi Pocket Namiji 是一款专为 Meshtastic / LoRa Mesh 玩家设计的超小型节点平台。它尺寸小巧、供电灵活、支持二次开发，适合用于太阳能节点、室内固定节点等多种应用场景。
+Sakura Pi Pocket Namiji 是一款专为 LoRa/Mesh 玩家设计的超小型节点平台。它尺寸小巧、供电灵活、支持二次开发，适合用于太阳能节点、室内固定节点等多种应用场景。
 
 <img
   src={require('./img/board-shot.jpg').default}
@@ -24,14 +23,16 @@ Sakura Pi Pocket Namiji不支持E290等使用国产LoRa(ChirpIOT)芯片的模块
 ## 特征
 
 Sakura Pi Pocket Namiji 的基本参数如下：
+
 - 处理器：ESP32-C3，支持 WiFi 和 BLE
-- 兼容 Meshtastic，已预烧录固件
+- 兼容 MT/MC，已预烧录固件
 - 支持软件二次开发，源码开放，可自行编译
 - 尺寸小巧：可直接装进 50mm PVC 水管
 - 散热器兼容设计，适合极端环境加装散热器
 - 板载 AHT20 温度传感器，用于监测板子温度；在封闭环境（如太阳能节点）中，可判断密封是否失效
 
 ## 供电设计
+
 - Buck-Boost 架构
 - 输出：5V
 - 输入：3–16V 宽压范围
@@ -42,12 +43,15 @@ Sakura Pi Pocket Namiji 的基本参数如下：
 - 具备反接保护，适合户外和实验环境
 
 ### 太阳能节点应用
+
 用户可自备以下组件构建太阳能节点：
+
 - 带保护板的电池（支持 1–4 串）
 - 太阳能板
 - MPPT 模块
 
 ## 射频与接口
+
 - 焊接式 SMA 座子（固定）
 - IPEX1 接口连接 LoRa 模块
 - 建议使用 gizont 定频天线（24cm / 40cm），升级玻璃钢天线效果更佳
