@@ -22,9 +22,5 @@
   "sidebar.docs.category.sakurapi-elara-1": {
     "message": "Sakura Pi Elara 1",
     "description": "The label for category sakurapi-elara-1 in sidebar docs"
-  },
-  "sidebar.docs.category.sakurapi-pocket-namiji": {
-    "message": "Sakura Pi Pocket Namiji",
-    "description": "The label for category sakurapi-pocket-namiji in sidebar docs"
   }
 }
