@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.sakurapi.org/en/blog</id>
+    <title>Sakura Pi doc website Blog</title>
+    <updated>2026-08-18T04:50:19.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.sakurapi.org/en/blog"/>
+    <subtitle>Sakura Pi doc website Blog</subtitle>
+    <icon>https://docs.sakurapi.org/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome Docusaurus]]></title>
+        <id>https://docs.sakurapi.org/en/blog/welcome-docusaurus-v2</id>
+        <link href="https://docs.sakurapi.org/en/blog/welcome-docusaurus-v2"/>
+        <updated>2026-08-18T04:50:19.000Z</updated>
+        <summary type="html"><![CDATA[This is our first post on Docusaurus.]]></summary>
+        <content type="html"><![CDATA[<p>This is our first post on Docusaurus.
+<!-- -->:p</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sakura Pi RK3308B Linux 6.17 Support Now Is READY!]]></title>
+        <id>https://docs.sakurapi.org/en/blog/001-linux-mainline-6.17-sakurapi-rk3308b</id>
+        <link href="https://docs.sakurapi.org/en/blog/001-linux-mainline-6.17-sakurapi-rk3308b"/>
+        <updated>2026-08-18T04:50:19.000Z</updated>
+        <summary type="html"><![CDATA[Sakura Pi RK3308B Linux 6.17 Support Now Is READY!]]></summary>
+        <content type="html"><![CDATA[<p>Sakura Pi RK3308B Now Supported in Linux 6.17 Mainline
+First of all, we would like to thank everyone for their continued support.</p>
+<p>Earlier this year, we completed the adaptation of Sakura Pi RK3308B to linux-next and submitted a PR to the Linux organization. This SBC is now officially supported in the latest Linux 6.17.</p>
+<p>We submitted the following patches:</p>
+<ul>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v6.17.6&amp;id=bc099a4f5b7d08d97684648abe58d236cb7afa4f" target="_blank" rel="noopener noreferrer">dt-bindings: arm: rockchip: Add Sakura Pi RK3308B</a></li>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v6.17.6&amp;id=281bf6e619fc637282288a3a087e2b2ed3150cd5" target="_blank" rel="noopener noreferrer">dt-bindings: vendor-prefixes: Add SakuraPi prefix</a></li>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v6.17.6&amp;id=79f2a17024412fd6f62208ab3fd6814e52588a31" target="_blank" rel="noopener noreferrer">arm64: dts: rockchip: add DTs for Sakura Pi RK3308B</a></li>
+</ul>
+<p>Special thanks to Hsun Lai for all the contributions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="additional-patches">Additional Patches<a href="https://docs.sakurapi.org/en/blog/001-linux-mainline-6.17-sakurapi-rk3308b#additional-patches" class="hash-link" aria-label="Direct link to Additional Patches" title="Direct link to Additional Patches">​</a></h3>
+<p>These patches have not yet been submitted to the Linux organization. In some cases, you may need these patches to ensure the SBC works perfectly. You might need to manually merge these patches to make them effective. Most of them have already been merged into Armbian, so if you are using Armbian directly, you don’t need to worry about these issues.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rockchip-vop">Rockchip VOP<a href="https://docs.sakurapi.org/en/blog/001-linux-mainline-6.17-sakurapi-rk3308b#rockchip-vop" class="hash-link" aria-label="Direct link to Rockchip VOP" title="Direct link to Rockchip VOP">​</a></h4>
+<p>These patches fix the issue where the mainline kernel cannot use the RK3308B VOP’s built-in LCDC (LCD Controller) to output to a panel.</p>
+<ul>
+<li><a href="https://github.com/armbian/build/blob/main/patch/kernel/archive/rockchip64-6.18/rk3308-internal-rgb-lcdc.patch" target="_blank" rel="noopener noreferrer">rk3308-internal-rgb-lcdc.patch</a></li>
+<li><a href="https://github.com/armbian/build/blob/main/patch/kernel/archive/rockchip64-6.18/rk3308-vop-output.patch" target="_blank" rel="noopener noreferrer">rk3308-vop-output.patch</a></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rockchip-uart">Rockchip UART<a href="https://docs.sakurapi.org/en/blog/001-linux-mainline-6.17-sakurapi-rk3308b#rockchip-uart" class="hash-link" aria-label="Direct link to Rockchip UART" title="Direct link to Rockchip UART">​</a></h4>
+<p>This patch fixes the binding issue of UART DMA for RK3308B in the mainline kernel.</p>
+<ul>
+<li><a href="https://github.com/armbian/build/blob/main/patch/kernel/archive/rockchip64-6.18/rk3308-fix-uart-dma.patch" target="_blank" rel="noopener noreferrer">rk3308-fix-uart-dma.patch</a></li>
+</ul>]]></content>
+    </entry>
+</feed>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Sakura Pi doc website Blog</title>
+        <link>https://docs.sakurapi.org/blog</link>
+        <description>Sakura Pi doc website Blog</description>
+        <lastBuildDate>Tue, 18 Aug 2026 04:50:19 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh</language>
+        <item>
+            <title><![CDATA[欢迎来到 Docusaurus]]></title>
+            <link>https://docs.sakurapi.org/blog/welcome-docusaurus-v2</link>
+            <guid>https://docs.sakurapi.org/blog/welcome-docusaurus-v2</guid>
+            <pubDate>Tue, 18 Aug 2026 04:50:19 GMT</pubDate>
+            <description><![CDATA[这是我们在 Docusaurus 的第一篇文章。]]></description>
+            <content:encoded><![CDATA[<p>这是我们在 Docusaurus 的第一篇文章。
+<!-- -->:p</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Sakura Pi RK3308B 现已获得 Linux 6.17 主线支持]]></title>
+            <link>https://docs.sakurapi.org/blog/001-linux-mainline-6.17-sakurapi-rk3308b</link>
+            <guid>https://docs.sakurapi.org/blog/001-linux-mainline-6.17-sakurapi-rk3308b</guid>
+            <pubDate>Tue, 18 Aug 2026 04:50:19 GMT</pubDate>
+            <description><![CDATA[Sakura Pi RK3308B 现已获得 Linux 6.17 主线支持]]></description>
+            <content:encoded><![CDATA[<p>首先在此感谢大家的持续关注。</p>
+<p>我们在今年中旬完成了对 Sakura Pi RK3308B 的 linux-next 的适配并发送 PR 至 linux org，该 SBC 现于最新的 Linux 6.17 得到了正式的支持。</p>
+<p>我们发送了以下补丁:</p>
+<ul>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v6.17.6&amp;id=bc099a4f5b7d08d97684648abe58d236cb7afa4f" target="_blank" rel="noopener noreferrer">dt-bindings: arm: rockchip: Add Sakura Pi RK3308B</a></li>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v6.17.6&amp;id=281bf6e619fc637282288a3a087e2b2ed3150cd5" target="_blank" rel="noopener noreferrer">dt-bindings: vendor-prefixes: Add SakuraPi prefix</a></li>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v6.17.6&amp;id=79f2a17024412fd6f62208ab3fd6814e52588a31" target="_blank" rel="noopener noreferrer">arm64: dts: rockchip: add DTs for Sakura Pi RK3308B</a></li>
+</ul>
+<p>在此特别感谢 Hsun Lai 的所有工作。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="一些其他的补丁">一些其他的补丁<a href="https://docs.sakurapi.org/blog/001-linux-mainline-6.17-sakurapi-rk3308b#%E4%B8%80%E4%BA%9B%E5%85%B6%E4%BB%96%E7%9A%84%E8%A1%A5%E4%B8%81" class="hash-link" aria-label="一些其他的补丁的直接链接" title="一些其他的补丁的直接链接">​</a></h3>
+<p>这些补丁是尚未提交至 linux org 的，某些情况下您可能需要这些补丁才能让 SBC 完美工作。
+您可能需要手动合并这些补丁让它们发挥作用。它们大多数已经被合并至 Armbian，如果您直接使用 Armbian，则不需要考虑这些问题。</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rockchip-vop">Rockchip VOP<a href="https://docs.sakurapi.org/blog/001-linux-mainline-6.17-sakurapi-rk3308b#rockchip-vop" class="hash-link" aria-label="Rockchip VOP的直接链接" title="Rockchip VOP的直接链接">​</a></h4>
+<p>该补丁修复了主线无法使用 RK3308B VOP 的内置 LCDC (LCD Controller) 输出到面板的功能。</p>
+<ul>
+<li><a href="https://github.com/armbian/build/blob/main/patch/kernel/archive/rockchip64-6.18/rk3308-internal-rgb-lcdc.patch" target="_blank" rel="noopener noreferrer">rk3308-internal-rgb-lcdc.patch</a></li>
+<li><a href="https://github.com/armbian/build/blob/main/patch/kernel/archive/rockchip64-6.18/rk3308-vop-output.patch" target="_blank" rel="noopener noreferrer">rk3308-vop-output.patch</a></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rockchip-uart">Rockchip UART<a href="https://docs.sakurapi.org/blog/001-linux-mainline-6.17-sakurapi-rk3308b#rockchip-uart" class="hash-link" aria-label="Rockchip UART的直接链接" title="Rockchip UART的直接链接">​</a></h4>
+<p>该补丁修复了主线对于 RK3308B 的 UART DMA 的绑定问题。</p>
+<ul>
+<li><a href="https://github.com/armbian/build/blob/main/patch/kernel/archive/rockchip64-6.18/rk3308-fix-uart-dma.patch" target="_blank" rel="noopener noreferrer">rk3308-fix-uart-dma.patch</a></li>
+</ul>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
